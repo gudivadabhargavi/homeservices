@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find trusted home services like plumbing, electrical, and cleaning. Book professional service providers online.">
+    <title>Home Service Provider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background: url('/public/images/book.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+        .navimg {
+            border-radius: 50%;
+        }
+        .hero {
+            background: rgb(79, 78, 78 , 0.4);
+            color: rgb(238, 234, 234);
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .hidden {
+            display: none;
+        }
+        .service-category h3 {
+            color: rgb(24, 21, 21);
+        }
+        .service-category a{
+            text-decoration: none;
+            color: rgb(24, 21, 21);
+        }
+        .footer {
+            background: #3b3b3c;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #homemainn{
+          border:2px solid black;
+          border-radius: 10px;
+          padding: 10px;
+          background-color: white; 
+        }
+        .text-center{
+          text-align: center;
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+        }
+        #about{
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+        }
+        #reviews{
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+        }
+        #contact{
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img class="navimg" src="/public/images/homepage.jpg" alt="Home Services" width="33px" height="33px">
+            <a class="navbar-brand" href="#">HomeServices</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('services')">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('about')">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('reviews')">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <h2>Find Trusted Home Services</h2>
+        <p>Plumbing, Electrical, Cleaning, and More</p>
+    </section>
+   <!-- Services Section -->
+   <section id="services" class="py-5 container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="services-container" id="servicesContainer" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+        <div class="service-category" id="homemainn" style="flex: 1; min-width: 250px;">
+            <h3>🏠 Home Maintenance</h3>
+            <a href="homeservice.html" style="text-decoration: none;"><div class="service-card">Home Cleaning & Sanitization</div></a>
+            <a href="plumbing.html" style="text-decoration: none;"><div class="service-card">Plumbing & Water Solutions</div></a>
+            <a href="electrical.html" style="text-decoration: none;"><div class="service-card">Electrical Repairs & Installations</div></a>
+        </div>
+        <div class="service-category" id="homemainn" style="flex: 1; min-width: 250px;">
+            <h3>🔧 Appliance Services</h3>
+            <a href="appearnce.html" style="text-decoration: none;"><div class="service-card">Appliance Servicing & Repairs</div></a>
+            <a href="homesecurity.html" style="text-decoration: none;"><div class="service-card">Home Security & Automation</div></a>
+        </div>
+        <div class="service-category" id="homemainn" style="flex: 1; min-width: 250px;">
+            <h3>🎨 Home Improvement</h3>
+            <a href="painting.html" style="text-decoration: none;"><div class="service-card">Home Painting & Wall Care</div></a>
+            <a href="carpenter.html" style="text-decoration: none;"><div class="service-card">Custom Woodwork & Furniture Repair</div></a>
+            <a href="renovation.html" style="text-decoration: none;"><div class="service-card">Home Renovation</div></a>
+        </div>
+        <div class="service-category" id="homemainn" style="flex: 1; min-width: 250px;">
+            <h3>🌿 Outdoor & Environment</h3>
+            <a href="lawn.html" style="text-decoration: none;"><div class="service-card">Lawn Care & Outdoor Maintenance</div></a>
+            <a href="pest.html" style="text-decoration: none;"><div class="service-card">Pest Management & Control</div></a>
+        </div>
+    </div>
+</section>
+
+    
+    <section id="about" class="py-5 container hidden">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p>We are a leading home service provider offering top-quality solutions for plumbing, electrical repairs, cleaning, and more. Our professionals are highly trained and experienced.</p>
+        <p>Contact us at:</p>
+        <p>Email: support@homeservices.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+    </section>
+    
+    <section id="reviews" class="py-5 container hidden">
+        <h2 class="text-center mb-4">Reviews</h2>
+        <form>
+            <textarea class="form-control" placeholder="Write a review..."></textarea>
+            <button class="btn btn-primary mt-2">Submit</button>
+        </form>
+    </section>
+    
+    <section id="contact" class="py-5 container hidden">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Your message"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 HomeServices. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                if (section.id !== 'hero') {
+                    section.classList.add('hidden');
+                }
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

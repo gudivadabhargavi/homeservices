@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Lawn Care & Outdoor Maintenance | Professional Landscaping Services</title>
+  <meta name="description" content="Professional Lawn Care & Outdoor Maintenance services to keep your property beautiful. Choose from our basic, intermediate, and advanced landscaping packages to suit your needs.">
+  <meta name="keywords" content="lawn care, outdoor maintenance, landscaping, garden care, weed control, fertilization, irrigation, lawn mowing">
+  <meta name="author" content="Your Company Name">
+  
+  <!-- JSON-LD Structured Data (Optional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lawn Care & Outdoor Maintenance",
+    "image": "lawnlogo.jpg",
+    "url": "https://www.example.com/lawncare",
+    "telephone": "+1-555-6789",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 Greenway Blvd",
+      "addressLocality": "Hometown",
+      "addressRegion": "HT",
+      "postalCode": "12345",
+      "addressCountry": "US"
+    },
+    "description": "Expert lawn care and outdoor maintenance services for a beautiful, well-kept property. We offer lawn mowing, trimming, aeration, fertilization, and more."
+  }
+  </script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/public/images/lawncare.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    /* Background Overlay for Readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    /* Content Layer */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    /* Navbar Styles */
+    nav.navbar {
+      background: linear-gradient(45deg, #006400, #228B22);
+    }
+    .navimg {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    /* Service Cards */
+    .service-card {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 20px;
+    }
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+    /* Ratings */
+    .ratings {
+      color: #ffcc00;
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    /* Book Now Button */
+    .btn-primary {
+      background-color: #28a745;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #218838;
+    }
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 15px;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <img class="navimg" src="/public/images/lawnlogo.jpg" alt="Lawn Care Logo" width="30" height="30">
+        <a class="navbar-brand" href="#">Lawn Care & Outdoor Maintenance</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="./Home.html">Home</a></li>
+            <!-- Additional nav items can be added here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Professional Lawn Care & Outdoor Maintenance</h1>
+      <p>Choose the best landscaping package to keep your property beautiful.</p>
+    </section>
+    
+    <!-- Service Levels Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Basic Level -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Basic Lawn Care</h3>
+            <p>Includes mowing, basic trimming, and weed control.</p>
+            <p class="ratings">⭐⭐⭐ 3.8/5</p>
+            <p><strong>Price: $40 - $80</strong></p>
+            <a href="booknow.html"><button class="btn btn-primary">Book Now</button></a>
+          </div>
+        </div>
+        <!-- Intermediate Level -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Intermediate Lawn Care</h3>
+            <p>Includes mowing, trimming, lawn aeration, and soil treatment.</p>
+            <p class="ratings">⭐⭐⭐⭐ 4.5/5</p>
+            <p><strong>Price: $100 - $180</strong></p>
+            <a href="booknow.html"><button class="btn btn-primary">Book Now</button></a>
+          </div>
+        </div>
+        <!-- Advanced Level -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <h3>Advanced Lawn Care</h3>
+            <p>Complete lawn health care including fertilization and pest control.</p>
+            <p class="ratings">⭐⭐⭐⭐⭐ 4.9/5</p>
+            <p><strong>Price: $200 - $350</strong></p>
+            <a href="booknow.html"><button class="btn btn-primary">Book Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Lawn Care & Outdoor Maintenance. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

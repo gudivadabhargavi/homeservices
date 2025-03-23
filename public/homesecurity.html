@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Home Security & Automation | Secure Your Home</title>
+  <meta name="description" content="Home Security & Automation - Secure your home with state-of-the-art technology. We offer basic, intermediate, and advanced security solutions to protect your property.">
+  <meta name="keywords" content="home security, automation, smart locks, CCTV, alarm systems, security services, home protection">
+  <meta name="author" content="Your Company Name">
+  
+  <!-- JSON-LD Structured Data (Optional) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Home Security & Automation",
+    "image": "homesecuritylogo.jpg",
+    "url": "https://www.example.com/homesecurity",
+    "telephone": "+1-555-1111",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "321 Secure Street",
+      "addressLocality": "Hometown",
+      "addressRegion": "HT",
+      "postalCode": "98765",
+      "addressCountry": "US"
+    },
+    "description": "Expert home security and automation services to secure your home with smart locks, CCTV, and alarm systems."
+  }
+  </script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/public/images/security.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    /* Background Overlay for Readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    /* Content Layer */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    /* Navbar Styles */
+    .navbar {
+      background: linear-gradient(45deg, #1a1a1a, #333333);
+    }
+    .navimg {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    /* Service Cards */
+    .service-level {
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+    .service-level:hover {
+      transform: scale(1.05);
+    }
+    /* Ratings */
+    .ratings {
+      color: #ffcc00;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    /* Book Now Button */
+    .btn-warning {
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .btn-warning:hover {
+      background-color: #d39e00;
+    }
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 15px;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <img class="navimg" src="/public/images/homesecuritylogo.jpg" alt="Home Security Logo" width="30" height="30">
+        <a class="navbar-brand" href="#">Home Security & Automation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="./Home.html">Home</a></li>
+            <!-- Additional nav items can be added here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Home Security & Automation</h1>
+      <p>Secure your home with state-of-the-art technology</p>
+    </section>
+    
+    <!-- Service Levels Section -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Basic Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Basic</h2>
+            <p>Installation of basic alarms and sensors</p>
+            <p><strong>Price: $100</strong></p>
+            <p class="ratings">⭐⭐⭐☆☆</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+        <!-- Intermediate Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Intermediate</h2>
+            <p>Advanced monitoring and automation integration</p>
+            <p><strong>Price: $250</strong></p>
+            <p class="ratings">⭐⭐⭐⭐☆</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+        <!-- Advanced Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Advanced</h2>
+            <p>Complete home automation with smart locks, cameras, and sensors</p>
+            <p><strong>Price: $500</strong></p>
+            <p class="ratings">⭐⭐⭐⭐⭐</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Home Security & Automation. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

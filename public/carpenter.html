@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title>Custom Woodwork & Furniture Repair | Transform Your Home</title>
+  <meta name="description" content="Custom Woodwork & Furniture Repair - Transform your home with expert craftsmanship. We offer basic, intermediate, and advanced repair and design services for your furniture and woodwork.">
+  <meta name="keywords" content="custom woodwork, furniture repair, home improvement, carpentry, custom furniture, repair services">
+  <meta name="author" content="Your Company Name">
+  
+  <!-- JSON-LD Structured Data (Optional, for Local Business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Custom Woodwork & Furniture Repair",
+    "image": "woodwork.jpg",
+    "url": "https://www.example.com/woodwork",
+    "telephone": "+1-555-0001",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "456 Carpenter St",
+      "addressLocality": "Hometown",
+      "addressRegion": "HT",
+      "postalCode": "67890",
+      "addressCountry": "US"
+    },
+    "description": "Expert custom woodwork and furniture repair services to transform your home with quality craftsmanship."
+  }
+  </script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background: url('/public/images/carpenter.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    /* Dark Overlay for Readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    /* Content Layer */
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    /* Navbar with Gradient Background */
+    nav.navbar {
+      background: linear-gradient(45deg, #4a2c2c, #7f4e4e);
+    }
+    .navimg {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    /* Service Cards */
+    .service-level {
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+    .service-level:hover {
+      transform: scale(1.05);
+    }
+    /* Ratings */
+    .ratings {
+      color: #ffcc00;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    /* Book Now Button */
+    .btn-warning {
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .btn-warning:hover {
+      background-color: #d39e00;
+    }
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Replace 'woodwork.jpg' with your actual logo file if needed -->
+        <img class="navimg" src="/public/images/woodwork.jpg" alt="Woodwork Logo" width="30" height="30">
+        <a class="navbar-brand" href="#">Custom Woodwork & Furniture Repair</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="./Home.html">Home</a></li>
+            <!-- Additional navigation items can be added here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Custom Woodwork & Furniture Repair</h1>
+      <p>Transform your home with expert craftsmanship</p>
+    </section>
+    
+    <!-- Service Levels Section -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Basic Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Basic</h2>
+            <p>Minor repairs and adjustments</p>
+            <p><strong>Price: $60</strong></p>
+            <p class="ratings">⭐⭐⭐☆☆</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+        <!-- Intermediate Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Intermediate</h2>
+            <p>Custom modifications & upgrades</p>
+            <p><strong>Price: $120</strong></p>
+            <p class="ratings">⭐⭐⭐⭐☆</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+        <!-- Advanced Level -->
+        <div class="col-md-4">
+          <div class="service-level">
+            <h2>Advanced</h2>
+            <p>Complete custom design & installation</p>
+            <p><strong>Price: $250</strong></p>
+            <p class="ratings">⭐⭐⭐⭐⭐</p>
+            <a href="booknow.html">
+              <button class="btn btn-warning">Book Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Custom Woodwork & Furniture Repair. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
